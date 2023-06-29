@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	    https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- byType is not possible when we have same Type of Beans more than one , use attribute to resolve primary=true-->
+    <!-- byName and constructor is possible when we have same Type of Beans more than one  -->
+
+    <bean id="std" class="com.khadri.spring.core.autowire.many.byname.Student" autowire="byType"/>
+
+    <bean id="cAdd" name="currentAddress" class="com.khadri.spring.core.autowire.many.byname.Address" >
+        <property name="streetName" value="Bandaru Nagar"/>
+    </bean>
+
+    <bean id="pAdd" name="permanentAddress" class="com.khadri.spring.core.autowire.many.byname.Address" primary="true">
+        <property name="streetName" value="NGO COLONY"/>
+    </bean>
+
+</beans>
