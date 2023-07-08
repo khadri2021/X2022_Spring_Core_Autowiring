@@ -7,13 +7,13 @@
     <!-- byType is not possible when we have same Type of Beans more than one , use attribute to resolve primary=true-->
     <!-- byName and constructor is possible when we have same Type of Beans more than one  -->
 
-    <bean id="std" class="com.khadri.spring.core.autowire.many.byname.Student" autowire="byType"/>
+    <bean id="std" class="com.khadri.spring.core.autowire.primary.Student" autowire="byType"/>
 
-    <bean id="cAdd" name="currentAddress" class="com.khadri.spring.core.autowire.many.byname.Address" >
+    <bean id="cAdd" name="currentAddress" class="com.khadri.spring.core.autowire.primary.Address" >
         <property name="streetName" value="Bandaru Nagar"/>
     </bean>
 
-    <bean id="pAdd" name="permanentAddress" class="com.khadri.spring.core.autowire.many.byname.Address" primary="true">
+    <bean id="pAdd" name="permanentAddress" class="com.khadri.spring.core.autowire.primary.Address" primary="true">
         <property name="streetName" value="NGO COLONY"/>
     </bean>
 

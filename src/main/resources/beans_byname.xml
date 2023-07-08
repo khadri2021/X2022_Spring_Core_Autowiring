@@ -6,7 +6,7 @@
 
     <bean id="std" class="com.khadri.spring.core.autowire.byname.Student" autowire="byName"/>
 
-    <bean id="add" name="address" class="com.khadri.spring.core.autowire.byname.Address"/>
-
+    <bean id="currentAddress" class="com.khadri.spring.core.autowire.byname.Address"/>
+    <bean id="permanentAddress" class="com.khadri.spring.core.autowire.byname.Address"/>
 
 </beans>

@@ -1,10 +1,8 @@
-package com.khadri.spring.core.autowire.bytype;
+package com.khadri.spring.core.autowire.qualifier;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Customer {
-
-
 
     private Order order;
 

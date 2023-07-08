@@ -1,4 +1,4 @@
-package com.khadri.spring.core.autowire.bytype;
+package com.khadri.spring.core.autowire.qualifier;
 
 public class Order {
 

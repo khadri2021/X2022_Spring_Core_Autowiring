@@ -1,10 +1,8 @@
-package com.khadri.spring.core.autowire.bytype;
+package com.khadri.spring.core.autowire.primary;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Customer {
-
-
 
     private Order order;
 
@@ -17,7 +15,6 @@ public class Customer {
         System.out.println("constructor injection");
     }
 
-    @Qualifier("nonVeg")
     public void setOrder(Order order) {
         this.order = order;
         System.out.println("setter injection");

@@ -5,7 +5,12 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="cust" class="com.khadri.spring.core.autowire.bytype.Customer" autowire="byType"/>
-    <bean id="orderssss" class="com.khadri.spring.core.autowire.bytype.Order"/>
+<bean id="cust" class="com.khadri.spring.core.autowire.primary.Customer" autowire="byType"/>
 
+    <bean id="orderVeg" class="com.khadri.spring.core.autowire.primary.Order" >
+        <property name="name" value="veg food"/>
+    </bean>
+    <bean id="orderNonVeg" class="com.khadri.spring.core.autowire.primary.Order" primary="true">
+        <property name="name" value="non veg food"/>
+    </bean>
 </beans>
